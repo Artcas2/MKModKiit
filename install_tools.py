@@ -183,6 +183,7 @@ def main() -> None:
 
     print("\nInstallation terminée.")
     print(f"Dossier : {DESTINATION}")
+    input("Appuyez sur Entrée pour quitter...")
 
 
 if __name__ == "__main__":
