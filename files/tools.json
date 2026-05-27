@@ -1,1 +1,40 @@
-{"Wiimms SZS Tools":{"url":"https://szs.wiimm.de/download/szs-v2.42a-r8989-cygwin64.zip","extract":true},"BrawlCrate":{"url":"https://github.com/soopercool101/BrawlCrate/releases/download/v0.42h1/BrawlCrate.v0.42h1.x86.exe","extract":true,"extract_path":"BrawlCrate","enabled":false},"Blender":{"url":"https://download.blender.org/release/Blender3.6/blender-3.6.7-windows-x64.zip","extract":true},"Dolphin":{"url":"https://dl.dolphin-emu.org/releases/2603a/dolphin-2603a-x64.7z","extract":true},"Lorenzi's KMP Editor":{"url":"https://github.com/hlorenzi/kmp-editor/releases/download/v0.7.7/Lorenzi.s.KMP.Editor.0.7.7.exe","extract":false},"_env.bat":{"url":"https://raw.githubusercontent.com/Artcas2/MKModKiit/refs/heads/main/files/_env.bat","extract":false},"ABMatt":{"url":"https://raw.githubusercontent.com/Artcas2/MKModKiit/refs/heads/main/files/abmatt_windows-10_x64-1.3.2-portable.zip","extract":true},"Blender-MKW-Utilities":{"url":"https://github.com/Gabriela-Orzechowska/Blender-MKW-Utilities/releases/download/v0.1.13.5/Blender-MKW-Utilities-v0.1.13.5.zip","extract":false}}
+{
+  "Wiimms SZS Tools": {
+    "url": "https://szs.wiimm.de/download/szs-v2.42a-r8989-cygwin64.zip",
+    "extract": true
+  },
+  "BrawlCrate": {
+    "url": "https://github.com/soopercool101/BrawlCrate/releases/download/v0.42h1/BrawlCrate.v0.42h1.x86.exe",
+    "extract": true,
+    "extract_path": "BrawlCrate",
+    "enabled": false,
+    "shortcut": "BrawlCrate.exe"
+  },
+  "Blender": {
+    "url": "https://download.blender.org/release/Blender3.6/blender-3.6.7-windows-x64.zip",
+    "extract": true,
+    "shortcut": "blender-3.6.7-windows-x64\\blender-launcher.exe"
+  },
+  "Dolphin": {
+    "url": "https://dl.dolphin-emu.org/releases/2603a/dolphin-2603a-x64.7z",
+    "extract": true,
+    "shortcut": "Dolphin-x64\\Dolphin.exe"
+  },
+  "Lorenzi's KMP Editor": {
+    "url": "https://github.com/hlorenzi/kmp-editor/releases/download/v0.7.7/Lorenzi.s.KMP.Editor.0.7.7.exe",
+    "extract": false
+  },
+  "_env.bat": {
+    "url": "https://raw.githubusercontent.com/Artcas2/MKModKiit/refs/heads/main/files/_env.bat",
+    "extract": false
+  },
+  "ABMatt": {
+    "url": "https://raw.githubusercontent.com/Artcas2/MKModKiit/refs/heads/main/files/abmatt_windows-10_x64-1.3.2-portable.zip",
+    "extract": true,
+    "shortcut": "ABMatt\\bin\\abmatt-gui.exe"
+  },
+  "Blender-MKW-Utilities": {
+    "url": "https://github.com/Gabriela-Orzechowska/Blender-MKW-Utilities/releases/download/v0.1.13.5/Blender-MKW-Utilities-v0.1.13.5.zip",
+    "extract": false
+  }
+}

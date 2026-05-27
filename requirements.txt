@@ -1,3 +1,4 @@
 py7zr
+pywin32
 requests
 tqdm

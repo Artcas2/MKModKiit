@@ -4,6 +4,7 @@ import sys
 import zipfile
 
 import py7zr
+import win32com.client
 import requests
 from tqdm import tqdm
 
@@ -119,6 +120,13 @@ def extract_sfx(exe_path: Path, extract_to: Path) -> bool:
             temp_7z.unlink()
 
 
+def create_shortcut(target_path: Path, shortcut_path: Path):
+    shell = win32com.client.Dispatch("WScript.Shell")
+    shortcut = shell.CreateShortcut(str(shortcut_path))
+    shortcut.TargetPath = str(target_path)
+    shortcut.Save()
+
+
 def main() -> None:
     DESTINATION.mkdir(parents=True, exist_ok=True)
     print(f"Dossier de destination : {DESTINATION}")
@@ -151,6 +159,13 @@ def main() -> None:
                     file_path.unlink()
                 except Exception as e:
                     print(f"Impossible de supprimer {filename} : {e}")
+
+        if "shortcut" in info:
+            try:
+                create_shortcut(extract_path / info["shortcut"], DESTINATION / f"{tool_name}.lnk")
+                print(f"Raccourci vers {info['shortcut']} créé.")
+            except Exception as e:
+                print(f"Erreur lors de la création du raccourci : {e}")
 
         if tool_name == "Wiimms SZS Tools":
             try:
